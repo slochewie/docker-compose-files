@@ -1,1 +1,15 @@
-
+version: '2'
+services:
+  homebridge:
+    image: oznu/homebridge:raspberry-pi
+    container_name: homebridge
+    restart: always
+    network_mode: host
+    volumes:
+      - ./config:/homebridge
+    environment:
+      - PGID=1000
+      - PUID=1000
+      - HOMEBRIDGE_CONFIG_UI=1
+      - HOMEBRIDGE_CONFIG_UI_PORT=8181
+      - TZ=America/Los_Angeles
