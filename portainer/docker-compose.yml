@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  portainer:
+    image: portainer/portainer-ce
+    container_name: portainer
+    command: -H unix:///var/run/docker.sock
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ~/docker/portainer:/data
+      - /etc/letsencrypt/archive/example.com:/certs:ro
+    command:
+      - --ssl
+      - --sslcert /certs/cert1.pem
+      - --sslkey /certs/privkey1.pem
+    restart: always
+  
+  portainer_agent:
+    image: portainer/agent
+    container_name: agent
+    ports:
+      - 9001:9001
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ~/docker/portainer/volumes:/var/lib/docker/volumes
+    restart: always
