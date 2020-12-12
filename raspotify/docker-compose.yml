@@ -6,6 +6,6 @@ services:
     network_mode: host
     devices: ['/dev/snd:/dev/snd']
     environment:
-      SPOTIFY_NAME: 'McSpotify'
+      SPOTIFY_NAME: 'Spotify Connect'
     volumes:
       - /usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf
