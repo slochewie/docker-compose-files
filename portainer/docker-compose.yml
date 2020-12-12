@@ -9,7 +9,7 @@ services:
       - 9000:9000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ~/docker/portainer:/data
+      - ./data:/data
       - /etc/letsencrypt/archive/example.com:/certs:ro
     command:
       - --ssl
@@ -24,5 +24,5 @@ services:
       - 9001:9001
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ~/docker/portainer/volumes:/var/lib/docker/volumes
+      - ./volumes:/var/lib/docker/volumes
     restart: always
