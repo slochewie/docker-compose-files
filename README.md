@@ -40,7 +40,7 @@ mv $HOME/docker-compose-files $HOME/docker
 ```
 
 To install a container, cd into the directory of the container you
-you want to create and run "docker-compose up -d"
+want to create and run "docker-compose up -d"
 For example:
 ```
 cd $HOME/docker/pihole
