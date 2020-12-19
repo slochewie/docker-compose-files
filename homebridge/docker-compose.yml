@@ -6,7 +6,7 @@ services:
     restart: always
     network_mode: host
     volumes:
-      - ./config:/homebridge
+      - $PWD/config:/homebridge
     environment:
       - PGID=1000
       - PUID=1000
