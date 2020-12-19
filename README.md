@@ -38,3 +38,21 @@ I'm not a fan of the directory name.
 ```
 mv $HOME/docker-compose-files $HOME/docker
 ```
+
+To install a container, cd into the folder of the container you
+you want to create and run "docker-compose up -d"
+For example:
+```
+cd $HOME/docker/pihole
+```
+```
+docker-compose up -d
+```
+
+To upgrade a container.
+```
+docker-compose pull
+```
+```
+docker-compose up -d
+```
