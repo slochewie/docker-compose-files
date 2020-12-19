@@ -4,16 +4,23 @@ services:
         devices:
             - '/dev/gpiomem:/dev/gpiomem'
         privileged: false
+        devices:
+            - '/dev/snd'
+        
         ports:
             - '8080:8080'
             - '4443:4443'
+            - '1900:1900/udp'
+            - '554:554'
+            - '554:554/udp'
         environment:
             - TZ=America/Los_Angeles
-            - Country='United Kingdom'
-            - Language='English'
+ #           - Country='United Kingdom'
+            - Language=English
         volumes:
-            - '$PWD/webthings-gateway/data:/home/node/.mozilla-iot'
+            - '$PWD/data:/home/node/.mozilla-iot'
             - '/sys/class/gpio:/sys/class/gpio'
+            - '/usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf'
         network_mode: host
         logging:
            options:

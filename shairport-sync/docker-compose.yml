@@ -7,7 +7,7 @@ services:
             - NAME='McAirplay'
             - TZ='TZ=America/Los_Angeles'
         devices:
-            - '/dev/snd'
+            - '/dev/snd:/dev/snd'
         volumes:
             - '/usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf'
  #           - '$PWD/etc/shairport-sync.conf:/etc/shairport-sync.conf'
