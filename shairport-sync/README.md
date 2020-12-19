@@ -24,5 +24,5 @@ docker-compose up -d
 
 Edit $HOME/docker/shairport-sync/shairport-sync.conf to your liking.
 ```
-nano $HOME/docker/shairport-sync/shairport-sync.conf
+nano $HOME/docker/shairport-sync/etc/shairport-sync.conf
 ```
