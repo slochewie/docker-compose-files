@@ -12,9 +12,17 @@ Copy shairport-sync from the docker container to local system.
 ```
 mkdir $HOME/docker/shairport-sync/etc
 ```
+```
 docker cp shairport-sync:/etc/shairport-sync.conf $HOME/docker/shairport-sync/etc/
-
+```
+```
 cd $HOME/docker/shairport-sync
+```
+```
 docker-compose up -d
+```
 
 Edit $HOME/docker/shairport-sync/shairport-sync.conf to your liking.
+```
+nano $HOME/docker/shairport-sync/shairport-sync.conf
+```
