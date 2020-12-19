@@ -10,19 +10,19 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - $PWD/data:/data
-      - /etc/letsencrypt/archive/www.example.com:/certs:ro
-    command:
-      - --ssl
-      - --sslcert /certs/cert1.pem
-      - --sslkey /certs/privkey1.pem
+#      - /etc/letsencrypt/archive/www.example.com:/certs:ro
+#    command:
+#      - --ssl
+#      - --sslcert /certs/cert1.pem
+#      - --sslkey /certs/privkey1.pem
     restart: always
   
-  portainer_agent:
-    image: portainer/agent
-    container_name: agent
-    ports:
-      - 9001:9001
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./volumes:/var/lib/docker/volumes
-    restart: always
+#  portainer_agent:
+#    image: portainer/agent
+#    container_name: agent
+#    ports:
+#      - 9001:9001
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#      - ./volumes:/var/lib/docker/volumes
+#    restart: always
