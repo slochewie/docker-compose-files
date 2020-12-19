@@ -9,9 +9,9 @@ If you need to make changes to shairport-sync.conf.
 uncomment the Volumes and shairport-sync.conf lines in 
 docker-compose.yml
 Copy shairport-sync from the docker container to local system.
-
+```
 mkdir $HOME/docker/shairport-sync/etc
-
+```
 docker cp shairport-sync:/etc/shairport-sync.conf $HOME/docker/shairport-sync/etc/
 
 cd $HOME/docker/shairport-sync
