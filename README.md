@@ -1,6 +1,6 @@
 # docker-compose-files
 These are the docker-compose.yml files I use most frequently use.
-Most can be run as is with a simple "docker-compose up -d"
+Most can be run as is with a simple "docker-compose up -d".
 Some will require minor exits for pathing, etc.
 
 None will work without Docker or Docker Compose installed.
