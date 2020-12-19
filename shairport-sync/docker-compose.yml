@@ -4,12 +4,12 @@ services:
         restart: unless-stopped
         network_mode: host
         environment: 
-            - NAME='McAirplay'
+#            - NAME='AirPlay Name'
             - TZ='TZ=America/Los_Angeles'
         devices:
             - '/dev/snd:/dev/snd'
-        volumes:
-            - '/usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf'
- #           - '$PWD/etc/shairport-sync.conf:/etc/shairport-sync.conf'
+#        volumes:
+#            - '/usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf'
+#           - '$PWD/etc/shairport-sync.conf:/etc/shairport-sync.conf'
         container_name: shairport-sync
         image: mikebrady/shairport-sync
