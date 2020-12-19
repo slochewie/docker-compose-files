@@ -1,7 +1,7 @@
 # docker-compose-files
 These are the docker-compose.yml files I use most frequently use.
 Most can be run as is with a simple "docker-compose up -d".
-Some will require minor exits for pathing, etc.
+Some will require minor edits for pathing, etc.
 
 None will work without Docker or Docker Compose installed.
 Without further ado:
@@ -25,4 +25,16 @@ sudo usermod -aG docker pi
 ```
 ```
 sudo apt-get install docker-compose
+```
+
+Now get the docker-compose.yml files
+
+```
+git clone https://github.com/slochewie/docker-compose-files.git
+```
+This will make a directory called docker-compose-files 
+in $HOME/.
+I'm not a fan of the directory name.
+```
+mv $HOME/docker-compose-files $HOME/docker
 ```
