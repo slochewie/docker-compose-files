@@ -1,7 +1,7 @@
 version: "3"
 services:
   radius:
-    image: frauhottelmann/daloradius-docker:tag #you need to change the tag to your arch and the desired version
+    image: frauhottelmann/daloradius-docker:1.1 #you need to change the tag to your arch and the desired version
     container_name: radius
     restart: always
     depends_on:
@@ -16,11 +16,12 @@ services:
       - MYSQL_DATABASE=radius
       - MYSQL_USER=radius
       - MYSQL_PASSWORD=dalodbpass
+      - TZ='Los_Angeles'
 #    volumes:
-#      - ./radius/clients.conf:/etc/freeradius/3.0/clients.conf
-#      - ./radius/eap:/etc/freeradius/3.0/mods-available/eap
-#      - ./ssl/fullchain.pem:/etc/freeradius/3.0/certs/fullchain.pem
-#      - ./ssl/privkey.pem:/etc/freeradius/3.0/certs/privkey.pem
+#      - $PWD/radius/clients.conf:/etc/freeradius/3.0/clients.conf
+#      - $PWD/radius/eap:/etc/freeradius/3.0/mods-available/eap
+#      - /etc/letsencrypt/archive/example.com/fullchain.pem:/etc/freeradius/3.0/certs/fullchain.pem
+#      - /etc/letsencrypt/archive/example.com/privkey.pem:/etc/freeradius/3.0/certs/privkey.pem
   radius-mysql:
     image: mariadb:10.3 # use image: linuxserver/mariadb:arm32v7-110.3.18mariabionic-ls37 for RaspberryPi
     container_name: radius-mysql
@@ -30,5 +31,6 @@ services:
       - MYSQL_USER=radius
       - MYSQL_PASSWORD=dalodbpass
       - MYSQL_ROOT_PASSWORD=dalorootpass
+      - TZ='Los_Angeles'
     volumes:
-	- "./radius-mysql:/var/lib/mysql"
+      - "$PWD/radius-mysql:/var/lib/mysql"
