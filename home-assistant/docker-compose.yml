@@ -1,0 +1,11 @@
+version: '3'
+services:
+  homeassistant:
+    container_name: home-assistant
+    image: homeassistant/home-assistant:stable
+    volumes:
+      - $PWD/config:/config
+    environment:
+      - TZ=America/Los_Angeles
+    restart: always
+    network_mode: host
