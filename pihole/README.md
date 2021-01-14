@@ -11,7 +11,7 @@ mkdir -p /home/pi/docker/pihole
 cd /home/pi/docker/pihole
 ```
 ```
-wget https://github.com/slochewie/docker-compose-files/blob/main/pihole/docker-compose.yml
+wget https://github.com/slochewie/docker-compose-files/raw/main/pihole/docker-compose.yml
 ```
 ```
 docker-compose pull
