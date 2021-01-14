@@ -32,3 +32,14 @@ Stop DNSStubListener while restarting systemd-resolved:
 ```
 systemctl reload-or-restart systemd-resolved
 ```
+
+From the directory containing your docker-compose.yml file:
+```
+docker-compose pull
+```
+```
+docker-compose up -d
+```
+
+Verify it works by accessing:
+http://ip-of-your-pi:3000
