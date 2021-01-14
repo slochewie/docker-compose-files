@@ -5,7 +5,7 @@ https://hub.docker.com/r/adguard/adguardhome
 sudo mkdir /etc/systemd/resolved.conf.d
 ```
 ```
-/etc/systemd/resolved.conf.d/adguardhome.conf
+sudo nano /etc/systemd/resolved.conf.d/adguardhome.conf
 ```
 Paste in the following text (Ctrl+Shift+V)
 ```
