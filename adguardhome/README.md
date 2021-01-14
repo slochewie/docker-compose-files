@@ -28,4 +28,4 @@ ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 Stop DNSStubListener while restarting systemd-resolved:
 ```
 systemctl reload-or-restart systemd-resolved
-``
+```
