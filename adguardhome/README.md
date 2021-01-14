@@ -1,5 +1,8 @@
 https://hub.docker.com/r/adguard/adguardhome
 
+
+I currently have this running on Ubuntu on x86. I have yet to try the above container on Arm and not sure if they included an Arm version as of right now. TBD.
+
 The systemd-resolved service by default ahs DNSStubListener 
 listening on port 53. This will give an error when starting 
 the Docker container that uses port 53 as well. The 
