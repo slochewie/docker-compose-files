@@ -55,7 +55,7 @@ sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 ```
 Stop DNSStubListener while restarting systemd-resolved:
 ```
-systemctl reload-or-restart systemd-resolved
+sudo systemctl reload-or-restart systemd-resolved
 ```
 
 If you stop the container your Pi will no longer be able to resolve dns.
@@ -70,5 +70,5 @@ sudo mv /etc/resolv.conf.backup /etc/resolv.conf
 sudo mv /etc/systemd/resolved.conf.d/adguardhome.conf /etc/systemd/resolved.conf.d/adguardhome.conf.backup
 ```
 ```
-systemctl reload-or-restart systemd-resolved
+sudo systemctl reload-or-restart systemd-resolved
 ```
