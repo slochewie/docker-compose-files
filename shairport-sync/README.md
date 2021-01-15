@@ -26,10 +26,7 @@ docker-compose up -d
 ```
 docker cp shairport-sync:/etc/shairport-sync.conf $HOME/docker/shairport-sync/etc/
 ```
-Now you have a local copy of shairport-sync.conf for editing as needed.
-```
-docker container restart shairport-sync
-```
+Now you have a local copy of shairport-sync.conf for editing as needed
 
 
 
@@ -37,4 +34,7 @@ docker container restart shairport-sync
 Edit $HOME/docker/shairport-sync/shairport-sync.conf to your liking.
 ```
 nano $HOME/docker/shairport-sync/etc/shairport-sync.conf
+```
+```
+docker container restart shairport-sync
 ```
