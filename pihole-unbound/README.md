@@ -51,7 +51,7 @@ Ctrl+X to save and Y for yes
 sudo mv /etc/resolv.conf /etc/resolv.conf.backup
 ```
 ```
-ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 ```
 Stop DNSStubListener while restarting systemd-resolved:
 ```
