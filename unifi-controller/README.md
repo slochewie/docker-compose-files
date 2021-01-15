@@ -1,6 +1,7 @@
 # Unifi Controller
 https://hub.docker.com/r/linuxserver/unifi-controller
 
+Edit the docker-compose.yml as needed for your installation such as ports. If you require access from outside your local network poke holes in your router's firewall as needed.
 
 ```
 mkdir -p $HOME/docker/unifi-controller
