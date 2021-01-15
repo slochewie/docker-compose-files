@@ -1,16 +1,6 @@
 # Shairport Sync
 https://hub.docker.com/r/mikebrady/shairport-sync
 
-If you're using a device other than the Pi stereo jack,
-uncoment the "volumes" section and the alsa.conf line
-and edit alsa.conf appropriately to use either a USB soundcard
-or DAC
-
-If you need to make changes to shairport-sync.conf.
-uncomment the Volumes and shairport-sync.conf lines in 
-docker-compose.yml
-
-
 ```
 mkdir -p $HOME/docker/shairport-sync/etc
 ```
@@ -32,6 +22,15 @@ Now you have a local copy of shairport-sync.conf for editing as needed
 
 
 Edit $HOME/docker/shairport-sync/shairport-sync.conf to your liking.
+
+If you're using a device other than the Pi stereo jack,
+uncoment the "volumes" section and the alsa.conf line
+and edit alsa.conf appropriately to use either a USB soundcard
+or DAC
+
+If you need to make changes to shairport-sync.conf.
+uncomment the Volumes and shairport-sync.conf lines in 
+docker-compose.yml
 ```
 nano $HOME/docker/shairport-sync/etc/shairport-sync.conf
 ```
