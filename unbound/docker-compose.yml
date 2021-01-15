@@ -1,7 +1,7 @@
 version: '3.3'
 services:
     unbound:
-        container_name: my-unbound
+        container_name: unbound
         volumes:
             - '$PWD/data:/opt/unbound/etc/unbound/'
         ports:
