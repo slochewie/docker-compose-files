@@ -1,0 +1,15 @@
+version: "2"
+services:
+  node:
+    image: node
+    user: node
+    container_name: node
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+      - TZ='Los_Angeles'
+    volumes:
+      - $PWD/app:/home/node/app
+    expose:
+      - "8081"
+    command: "npm start"
