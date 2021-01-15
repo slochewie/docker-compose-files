@@ -38,7 +38,7 @@ the Docker container that uses port 53 as well.
 sudo mkdir /etc/systemd/resolved.conf.d
 ```
 ```
-sudo nano /etc/systemd/resolved.conf.d/adguardhome.conf
+sudo nano /etc/systemd/resolved.conf.d/pihole.conf
 ```
 Paste in the following text (Ctrl+Shift+V)
 ```
@@ -67,7 +67,7 @@ sudo rm /etc/resolv.conf
 sudo mv /etc/resolv.conf.backup /etc/resolv.conf
 ```
 ```
-sudo mv /etc/systemd/resolved.conf.d/adguardhome.conf /etc/systemd/resolved.conf.d/adguardhome.conf.backup
+sudo mv /etc/systemd/resolved.conf.d/pihole.conf /etc/systemd/resolved.conf.d/pihole.conf.backup
 ```
 ```
 sudo systemctl reload-or-restart systemd-resolved
