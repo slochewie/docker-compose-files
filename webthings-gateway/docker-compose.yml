@@ -15,12 +15,14 @@ services:
             - '554:554/udp'
         environment:
             - TZ=America/Los_Angeles
+ # Country env variable doesnt appear to work.
  #           - Country='United Kingdom'
             - Language=English
         volumes:
             - '$PWD/data:/home/node/.mozilla-iot'
             - '/sys/class/gpio:/sys/class/gpio'
-            - '/usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf'
+ # Uncomment below if you need access to alsa.conf
+ #           - '/usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf'
         network_mode: host
         logging:
            options:
