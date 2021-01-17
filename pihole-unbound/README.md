@@ -3,6 +3,8 @@ https://hub.docker.com/r/cbcrowe/pihole-unbound
 
 https://github.com/chriscrowe/docker-pihole-unbound
 
+This is instructuons on how to install Cris Crowe's pihole-unbound Docker image,
+
 ```
 mkdir -p $HOME/docker/pihole-unbound
 ```
