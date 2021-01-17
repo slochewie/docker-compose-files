@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    unbound:
+        container_name: unbound
+        volumes:
+            - '$PWD/data:/opt/unbound/etc/unbound/'
+        ports:
+            - '53:53/tcp'
+            - '53:53/udp'
+        restart: unless-stopped
+        image: 'mvance/unbound-rpi:latest'
