@@ -9,6 +9,9 @@ mkdir $HOME/docker/unbound-pihole
 cd $HOME/docker/unbound-pihole
 ```
 ```
+wget https://github.com/slochewie/docker-compose-files/raw/main/unbound-pihole/docker-compose.yml
+```
+```
 docker-compose pull
 ```
 ```
