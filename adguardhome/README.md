@@ -43,3 +43,14 @@ docker-compose up -d
 
 Verify it works by accessing:
 http://ip-of-your-pi:3000
+
+
+## Author
+
+Aaron Wilson <https://niteowl.dev>
+
+[![](https://cdn.buymeacoffee.com/buttons/default-blue.png)](https://www.buymeacoffee.com/slochewie)
+
+## License
+
+[MIT License](./LICENSE)

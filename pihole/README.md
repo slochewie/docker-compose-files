@@ -22,3 +22,14 @@ docker-compose up -d
 
 Verify its working by going to
 http://ip-of-your-pi
+
+
+## Author
+
+Aaron Wilson <https://niteowl.dev>
+
+[![](https://cdn.buymeacoffee.com/buttons/default-blue.png)](https://www.buymeacoffee.com/slochewie)
+
+## License
+
+[MIT License](./LICENSE)

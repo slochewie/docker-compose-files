@@ -37,3 +37,15 @@ nano $HOME/docker/shairport-sync/etc/shairport-sync.conf
 ```
 docker container restart shairport-sync
 ```
+
+
+
+## Author
+
+Aaron Wilson <https://niteowl.dev>
+
+[![](https://cdn.buymeacoffee.com/buttons/default-blue.png)](https://www.buymeacoffee.com/slochewie)
+
+## License
+
+[MIT License](./LICENSE)
