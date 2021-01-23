@@ -8,7 +8,7 @@ services:
  #   container_name: snipe_mariadb
     restart: unless-stopped
     volumes:
-      - mysql:/var/lib/mysql
+      - mariadb:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password123
       - MYSQL_USER=snipe
