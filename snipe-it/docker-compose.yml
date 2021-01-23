@@ -1,0 +1,7 @@
+---
+version: "2"
+services:
+  snipe-it:
+    image: linuxserver/snipe-it:version-v5.0.12
+    container_name: snipe-it
+    restart: no
