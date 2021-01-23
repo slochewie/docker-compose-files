@@ -1,7 +1,35 @@
----
-version: "2"
-services:
+version: "3"
+volumes:
+  mysql:
   snipe-it:
-    image: linuxserver/snipe-it:version-v5.0.12
+services:
+  mysql:
+    image: mysql:5
+    container_name: snipe_mysql
+    restart: unless-stopped
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password123
+      - MYSQL_USER=snipe
+      - MYSQL_PASSWORD=password123
+      - MYSQL_DATABASE=snipe
+  snipeit:
+    image: linuxserver/snipe-it:latest
     container_name: snipe-it
-    restart: no
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    volumes:
+      - snipe-it:/config
+    environment:
+      - APP_URL=192.168.1.171:8080
+      - MYSQL_PORT_3306_TCP_ADDR=mysql
+      - MYSQL_PORT_3306_TCP_PORT=3306
+      - MYSQL_DATABASE=snipe
+      - MYSQL_USER=snipe
+      - MYSQL_PASSWORD=password123
+      - PGID=1000
+      - PUID=1000
+    ports:
+      - "8080:80"
