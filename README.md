@@ -1,5 +1,5 @@
 # docker-compose-files
-This started as a collection of docker-compose.yml files I most frequently use on either Raspberry Pi 3 and 4 running Raspberry Pi OS Lite. This repository still contains those Docker compose files, but also requests and programs I was testing out, but lost interest in, or didn't meet my needs. Whether I use these programs or not all of these compose files should work. Feel free to submit a bug if one is not working for you. 
+This started as a collection of docker-compose.yml files I most frequently use on either Raspberry Pi 3 and 4 running Raspberry Pi OS Lite. This repository still contains those Docker compose files, but also requests and programs I was testing out, but lost interest in, or didn't meet my needs. Whether I use these programs or not all of these compose files should work. Feel free to submit a bug if one is not working for you.
 
 Most can be run as is with a simple "docker-compose up -d".
 
@@ -34,7 +34,7 @@ Now get the docker-compose.yml files
 ```
 git clone https://github.com/slochewie/docker-compose-files.git
 ```
-This will make a directory called docker-compose-files 
+This will make a directory called docker-compose-files
 in $HOME/.
 I'm not a fan of the directory name.
 ```
@@ -63,3 +63,11 @@ docker-compose pull
 ```
 docker-compose up -d
 ```
+
+Aaron Wilson <https://niteowl.dev>
+
+[![](https://cdn.buymeacoffee.com/buttons/default-blue.png)](https://www.buymeacoffee.com/slochewie)
+
+## License
+
+[MIT License](./LICENSE)
