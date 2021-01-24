@@ -8,7 +8,7 @@ Some will require minor edits for pathing, etc.
 None will work without Docker or Docker Compose installed.
 Without further ado:
 
-Install Docker & Docker Compose
+## Install Docker & Docker Compose
 ```
 sudo apt-get update
 ```
@@ -29,7 +29,7 @@ sudo usermod -aG docker pi
 sudo apt-get install docker-compose
 ```
 
-Now get the docker-compose.yml files
+## Clone docker-compose.yml files
 
 ```
 git clone https://github.com/slochewie/docker-compose-files.git
@@ -41,8 +41,7 @@ I'm not a fan of the directory name.
 mv $HOME/docker-compose-files $HOME/docker
 ```
 
-To install a container, cd into the directory of the container you
-want to create and run "docker-compose up -d"
+## Install a Docker container
 For example:
 ```
 cd $HOME/docker/pihole
@@ -51,7 +50,7 @@ cd $HOME/docker/pihole
 docker-compose up -d
 ```
 
-To upgrade an existing container.
+## Upgrade an existing container.
 cd into the directory of the container you wish to upgrade.
 For example:
 ```
@@ -62,7 +61,13 @@ docker-compose pull
 ```
 ```
 docker-compose up -d
+<<<<<<< HEAD
 ```
+=======
+
+
+## Author
+>>>>>>> 89cc2d90ef90205ad758f02df640bc96f03af920
 
 Aaron Wilson <https://niteowl.dev>
 
@@ -71,3 +76,7 @@ Aaron Wilson <https://niteowl.dev>
 ## License
 
 [MIT License](./LICENSE)
+<<<<<<< HEAD
+=======
+```
+>>>>>>> 89cc2d90ef90205ad758f02df640bc96f03af920

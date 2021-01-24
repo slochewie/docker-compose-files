@@ -63,3 +63,15 @@ sudo mv /etc/systemd/resolved.conf.d/pihole.conf /etc/systemd/resolved.conf.d/pi
 ```
 sudo systemctl reload-or-restart systemd-resolved
 ```
+
+
+
+## Author
+
+Aaron Wilson <https://niteowl.dev>
+
+[![](https://cdn.buymeacoffee.com/buttons/default-blue.png)](https://www.buymeacoffee.com/slochewie)
+
+## License
+
+[MIT License](./LICENSE)

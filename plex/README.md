@@ -1,10 +1,9 @@
-WORK IN PROGRESS - do not use right now.
+# Plex
+https://hub.docker.com/r/linuxserver/plex
 
-https://hub.docker.com/r/frauhottelmann/daloradius-docker
+Work In Progress
 
-Freeradius with a Daloradius web frontend and a
-MariaDB (MySQL) database.
-
+Plex recommends host mode, but bridged would seem more secure or at least better for a stack 
 
 
 
