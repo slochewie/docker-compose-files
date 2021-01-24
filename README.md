@@ -62,6 +62,7 @@ docker-compose pull
 ```
 docker-compose up -d
 ```
+## Author
 
 Aaron Wilson <https://niteowl.dev>
 
