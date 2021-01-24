@@ -61,13 +61,7 @@ docker-compose pull
 ```
 ```
 docker-compose up -d
-<<<<<<< HEAD
 ```
-=======
-
-
-## Author
->>>>>>> 89cc2d90ef90205ad758f02df640bc96f03af920
 
 Aaron Wilson <https://niteowl.dev>
 
@@ -76,7 +70,3 @@ Aaron Wilson <https://niteowl.dev>
 ## License
 
 [MIT License](./LICENSE)
-<<<<<<< HEAD
-=======
-```
->>>>>>> 89cc2d90ef90205ad758f02df640bc96f03af920
