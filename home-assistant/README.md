@@ -19,7 +19,7 @@ docker-compose up -d
 ```
 
 Go to:
-http://<your-pi-ip>:8123
+http://"<your-pi-ip>":8123
 
 ## Author
 
