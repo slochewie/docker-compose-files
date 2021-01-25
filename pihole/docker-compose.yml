@@ -1,4 +1,8 @@
-version: "2.2"
+version: "2"
+
+volumes:
+  etc-pihole
+  etc-dnsmasq.d
 
 # More info at https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/
 services:
@@ -16,8 +20,8 @@ services:
       WEBPASSWORD: 'password'
 # Volumes store your data between container upgrades
     volumes:
-      - '$PWD/etc-pihole/:/etc/pihole/'
-      - '$PWD/etc-dnsmasq.d/:/etc/dnsmasq.d/'
+      - etc-pihole:/etc/pihole/
+      - etc-dnsmasq.d:/etc/dnsmasq.d/
 # Recommended but not required (DHCP needs NET_ADMIN)  https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     cap_add:
       - NET_ADMIN
