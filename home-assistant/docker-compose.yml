@@ -8,4 +8,5 @@ services:
     environment:
       - TZ=America/Los_Angeles
     restart: unless-stopped
-#    network_mode: host
+    ports:
+      - 8123:8123
