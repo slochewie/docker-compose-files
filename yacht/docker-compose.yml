@@ -1,0 +1,12 @@
+version: 2.2
+services:
+  yacht:
+    image: selfhostedpro/yacht
+    container_name: yacht
+    volumes:
+      - yacht_data:/config
+    ports:
+      - 8000:8000
+    restart: always
+volumes:
+  yacht_data:

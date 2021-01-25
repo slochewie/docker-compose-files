@@ -1,5 +1,9 @@
 version: '2'
 
+volumes:
+  portainer
+#  portainer-agent
+
 services:
   portainer:
     image: portainer/portainer-ce
@@ -9,14 +13,14 @@ services:
       - 9000:9000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - $PWD/data:/data
+      - portainer:/data
 #      - /etc/letsencrypt/archive/www.example.com:/certs:ro
 #    command:
 #      - --ssl
 #      - --sslcert /certs/cert1.pem
 #      - --sslkey /certs/privkey1.pem
     restart: always
-  
+
 #  portainer_agent:
 #    image: portainer/agent
 #    container_name: agent
@@ -24,5 +28,5 @@ services:
 #      - 9001:9001
 #    volumes:
 #      - /var/run/docker.sock:/var/run/docker.sock
-#      - ./volumes:/var/lib/docker/volumes
+#      - portainer-agent:/var/lib/docker/volumes
 #    restart: always

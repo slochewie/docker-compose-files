@@ -1,4 +1,8 @@
 version: "2.1"
+
+volumes:
+  config:
+
 services:
   unifi-controller:
     image: ghcr.io/linuxserver/unifi-controller
@@ -8,7 +12,7 @@ services:
       - PGID=1000
       - MEM_LIMIT=1024M #optional
     volumes:
-      - $PWD/unifi-controller/config:/config
+      - config:/config
     ports:
       - 3478:3478/udp
       - 10001:10001/udp
