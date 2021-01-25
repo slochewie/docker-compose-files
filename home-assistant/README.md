@@ -18,6 +18,9 @@ docker-compose pull
 docker-compose up -d
 ```
 
+Go to:
+http://<your-pi-ip>:8123
+
 ## Author
 
 Aaron Wilson <https://niteowl.dev>
