@@ -1,7 +1,4 @@
-version: "2"
-
-networks:
-  default:
+version: "2.1"
 
 volumes:
   config:
