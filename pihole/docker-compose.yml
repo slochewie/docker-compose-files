@@ -1,8 +1,8 @@
 version: "2"
 
 volumes:
-  etc-pihole
-  etc-dnsmasq.d
+  etc-pihole:
+  etc-dnsmasq.d:
 
 # More info at https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/
 services:
