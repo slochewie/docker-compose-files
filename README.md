@@ -10,13 +10,13 @@ Without further ado:
 
 ## Install Docker & Docker Compose
 ```
-sudo apt-get update
+sudo apt update
 ```
 ```
-sudo apt-get upgrade
+sudo apt upgrade
 ```
 ```
-sudo apt-get install apt-transport-https ca-certificates software-properties-common
+sudo apt install apt-transport-https ca-certificates software-properties-common
 ```
 ```
 curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
@@ -25,8 +25,9 @@ Optional. Add user pi to the docker group. Run docker and docker-compose without
 ```
 sudo usermod -aG docker pi
 ```
+Install docker-compose
 ```
-sudo apt-get install docker-compose
+sudo apt install docker-compose
 ```
 
 ## Clone docker-compose.yml files
