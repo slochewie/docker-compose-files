@@ -1,5 +1,5 @@
 # docker-compose-files
-This started as a collection of docker-compose.yml files I most frequently use on either Raspberry Pi 3 and 4 running Raspberry Pi OS Lite. This repository still contains those Docker compose files, but also requests and programs I was testing out, but lost interest in, or didn't meet my needs. Whether I use these programs or not all of these compose files should work. Feel free to submit a bug if one is not working for you.
+This started as a collection of docker-compose.yml files I most frequently use on either Raspberry Pi 3 and 4 running Raspberry Pi OS Lite, now called Raspian Lite. This repository still contains those Docker compose files, but also requests and programs I was testing out, but lost interest in, or didn't meet my needs. Whether I use these programs or not all of these compose files should work. Feel free to submit a bug if one is not working for you.
 
 Most can be run as is with a simple "docker-compose up -d".
 
