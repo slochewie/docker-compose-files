@@ -6,9 +6,7 @@ Most can be run as is with a simple "docker-compose up -d".
 Some will require minor edits for pathing, etc.
 
 None will work without Docker or Docker Compose installed.
-Without further ado:
-
-Assumption, you are familiar with the command line and you are at least running your Raspberry Pi headless and already have SSH access. 
+Without further ado.  
 
 ## Install Docker & Docker Compose
 ```
