@@ -54,7 +54,7 @@ docker-compose pull
 docker-compose up -d
 ```
 
-## Upgrade an existing container.
+## Upgrade an existing container to latest update.
 cd into the directory of the container you wish to upgrade.
 For example:
 ```
