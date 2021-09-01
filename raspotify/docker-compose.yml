@@ -8,5 +8,7 @@ services:
     devices: ['/dev/snd:/dev/snd']
     environment:
       SPOTIFY_NAME: 'raspotify'
-    volumes:
-      - /usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf
+      ALSA_SLAVE_PCM: 'plughw:1,0'
+    restart: unless-stopped
+#    volumes:
+#      - /usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf

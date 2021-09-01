@@ -1,0 +1,17 @@
+# Nginx Proxy Manager using SQLite Docker Compose
+# https://nginxproxymanager.com/
+# https://github.com/jc21/nginx-proxy-manager
+# https://hub.docker.com/r/jc21/nginx-proxy-manager
+version: '2'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    environment:
+      DB_SQLITE_FILE: /data/database.sqlite
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt

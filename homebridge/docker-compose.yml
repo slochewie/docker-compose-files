@@ -3,7 +3,7 @@ services:
   homebridge:
     image: oznu/homebridge:raspberry-pi
     container_name: homebridge
-    restart: always
+    restart: unless-stopped
     network_mode: host
     volumes:
       - $PWD/config:/homebridge

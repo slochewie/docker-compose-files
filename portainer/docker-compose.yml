@@ -1,7 +1,7 @@
 version: '2'
 
-volumes:
-  portainer
+#volumes:
+#  portainer
 #  portainer-agent
 
 services:
@@ -13,7 +13,7 @@ services:
       - 9000:9000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - portainer:/data
+      - $HOME/docker/portainer/portainer-data:/data
 #      - /etc/letsencrypt/archive/www.example.com:/certs:ro
 #    command:
 #      - --ssl
