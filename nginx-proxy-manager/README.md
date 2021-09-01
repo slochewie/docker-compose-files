@@ -2,10 +2,10 @@
 https://nginxproxymanager.com/guide/#quick-setup
 
 ```
-mkdir -p /home/pi/docker/nginx-proxy-manager
+mkdir -p $HOME/docker/nginx-proxy-manager
 ```
 ```
-cd /home/pi/docker/nginx-proxy-manager
+cd $HOME/docker/nginx-proxy-manager
 ```
 ```
 wget https://github.com/slochewie/docker-compose-files/raw/main/nginx-proxy-manager/docker-compose.yml
