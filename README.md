@@ -1,22 +1,22 @@
 # docker-compose-files
-This started as a collection of docker-compose.yml files I most frequently use on either Raspberry Pi 3 and 4 running Raspberry Pi OS Lite. This repository still contains those Docker compose files, but also requests and programs I was testing out, but lost interest in, or didn't meet my needs. Whether I use these programs or not all of these compose files should work. Feel free to submit a bug if one is not working for you.
+This started as a collection of docker-compose.yml files I most frequently use on either Raspberry Pi 3 and 4 running Raspberry Pi OS Lite, now called Raspian Lite. This repository still contains those Docker compose files, but also  programs I was testing out, but lost interest in, or didn't meet my needs. Whether I use these programs or not all of these compose files should work. Feel free to submit a bug if one is not working for you.
 
 Most can be run as is with a simple "docker-compose up -d".
 
 Some will require minor edits for pathing, etc.
 
 None will work without Docker or Docker Compose installed.
-Without further ado:
+Without further ado.  
 
 ## Install Docker & Docker Compose
 ```
-sudo apt-get update
+sudo apt update
 ```
 ```
-sudo apt-get upgrade
+sudo apt upgrade
 ```
 ```
-sudo apt-get install apt-transport-https ca-certificates software-properties-common
+sudo apt install apt-transport-https ca-certificates software-properties-common
 ```
 ```
 curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
@@ -25,8 +25,9 @@ Optional. Add user pi to the docker group. Run docker and docker-compose without
 ```
 sudo usermod -aG docker pi
 ```
+Install docker-compose
 ```
-sudo apt-get install docker-compose
+sudo apt install docker-compose
 ```
 
 ## Clone docker-compose.yml files
@@ -47,10 +48,13 @@ For example:
 cd $HOME/docker/pihole
 ```
 ```
+docker-compose pull
+```
+```
 docker-compose up -d
 ```
 
-## Upgrade an existing container.
+## Upgrade an existing container to latest update.
 cd into the directory of the container you wish to upgrade.
 For example:
 ```

@@ -16,6 +16,8 @@ docker-compose pull
 docker-compose up -d
 ```
 
+Go to https://ip-of-your-pi:8443 to begin setup of the controller.
+
 
 
 ## Author
