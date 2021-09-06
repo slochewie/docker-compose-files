@@ -10,7 +10,7 @@ mkdir -p $HOME/docker/raspotify
 cd $HOME/docker/raspotify
 ```
 ```
-wget 
+wget https://github.com/slochewie/docker-compose-files/raw/main/raspotify/docker-compose.yml
 ```
 ```
 docker-compose pull
