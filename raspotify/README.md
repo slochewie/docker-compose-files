@@ -10,6 +10,9 @@ mkdir -p $HOME/docker/raspotify
 cd $HOME/docker/raspotify
 ```
 ```
+wget 
+```
+```
 docker-compose pull
 ```
 ```
