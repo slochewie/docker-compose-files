@@ -4,6 +4,7 @@ services:
   rpi-spotify:
     image: derkades/raspotify
     container_name: raspotify
+    privileged: true
     network_mode: host
     devices: ['/dev/snd:/dev/snd']
     environment:
