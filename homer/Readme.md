@@ -10,6 +10,10 @@ cd /home/pi/docker/homer
 ```
 wget https://github.com/slochewie/docker-compose-files/raw/main/homer/docker-compose.yml
 ```
+Edit config.yml to your liking.
+```
+nano ./assets/config.yml
+```
 ```
 docker-compose pull
 ```
