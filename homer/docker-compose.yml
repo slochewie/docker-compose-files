@@ -1,0 +1,9 @@
+version: '2'
+services:
+    homer:
+        ports:
+            - '8080:8080'
+        volumes:
+            - './assests:/www/assets'
+        restart: unless-stopped
+        image: 'b4bz/homer:latest'
