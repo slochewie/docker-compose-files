@@ -14,6 +14,7 @@ Edit config.yml to your liking.
 ```
 nano ./assets/config.yml
 ```
+Ctrl+O to save. Ctrl+X to exit.
 ```
 docker-compose pull
 ```
