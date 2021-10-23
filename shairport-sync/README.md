@@ -8,6 +8,9 @@ mkdir -p $HOME/docker/shairport-sync/etc
 cd $HOME/docker/shairport-sync
 ```
 ```
+wget https://github.com/slochewie/docker-compose-files/raw/main/shairport-sync/docker-compose.yml
+```
+```
 docker-compose pull
 ```
 ```

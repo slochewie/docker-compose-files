@@ -1,0 +1,18 @@
+  # https://tautulli.com/
+  # https://docs.linuxserver.io/images/docker-tautulli
+  # https://hub.docker.com/r/linuxserver/tautulli
+---
+version: "2.1"
+services:
+  tautulli:
+    image: ghcr.io/linuxserver/tautulli
+    container_name: tautulli
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Los_Angeles
+    volumes:
+      - $HOME/docker/tautulli:/config
+    ports:
+      - 8181:8181/tcp
+    restart: unless-stopped

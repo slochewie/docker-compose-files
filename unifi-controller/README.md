@@ -10,6 +10,9 @@ mkdir -p $HOME/docker/unifi-controller
 cd $HOME/docker/unifi-controller
 ```
 ```
+wget https://github.com/slochewie/docker-compose-files/raw/main/unifi-controller/docker-compose.yml
+```
+```
 docker-compose pull
 ```
 ```
