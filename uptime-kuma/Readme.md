@@ -1,5 +1,5 @@
 # Uptime Kuma
-https://hub.docker.com/r/derkades/raspotify
+https://hub.docker.com/r/louislam/uptime-kuma
 
 Installs uptime kuma
 
