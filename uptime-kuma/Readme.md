@@ -10,7 +10,7 @@ mkdir -p $HOME/docker/uptime-kuma
 cd $HOME/docker/uptime-kuma
 ```
 ```
-wget https://github.com/slochewie/docker-compose-files/raw/main/raspotify/docker-compose.yml
+wget https://github.com/slochewie/docker-compose-files/raw/main/uptime-kuma/docker-compose.yml
 ```
 ```
 docker-compose pull
