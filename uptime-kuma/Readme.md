@@ -1,5 +1,6 @@
 # Uptime Kuma
 https://hub.docker.com/r/louislam/uptime-kuma
+https://github.com/louislam/uptime-kuma
 
 Installs uptime kuma
 
