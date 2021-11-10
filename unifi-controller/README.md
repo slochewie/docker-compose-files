@@ -19,7 +19,7 @@ docker-compose pull
 docker-compose up -d
 ```
 
-Go to https://ip-of-your-pi:8443 to begin setup of the controller.
+First launch of UniFi Controller will take some time for it to initialize, but eventually go to https://ip-of-your-pi:8443 to begin setup of the controller.
 
 
 
