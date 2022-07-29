@@ -23,7 +23,7 @@ curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
 ```
 Optional. Add user pi to the docker group. Run docker and docker-compose without sudo.
 ```
-sudo usermod -aG docker pi
+sudo usermod -aG docker $USER
 ```
 Install docker-compose
 ```
