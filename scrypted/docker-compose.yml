@@ -1,0 +1,20 @@
+version: "3.5"
+
+services:
+    scrypted:
+        image: koush/scrypted
+        container_name: scrypted
+        restart: unless-stopped
+        network_mode: host
+        environment:
+            - TZ=America/Los_Angeles
+#        ports:
+#            - 10433:10443
+#            - 11080:11080
+        volumes:
+            - $PWD/.scrypted/volume:/server/volume
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "10m"
+                max-file: "10"
