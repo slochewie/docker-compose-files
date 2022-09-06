@@ -1,12 +1,7 @@
 version: "2.1"
-#networks:
-#  default:
 services:
   homeassistant:
     image: lscr.io/linuxserver/homeassistant:latest
-#    networks:
-#      - default
-#    container_name: homeassistant
     network_mode: host
     environment:
       - PUID=1000
@@ -22,33 +17,21 @@ services:
 
   mosquitto:
     image: eclipse-mosquitto
-#    container_name: mosquitto
-#    networks:
-#      - default
-#    network_mode: host
     environment:
 #      - PUID=1000
 #      - PGID=1000
       - TZ=America/Los_Angeles
-#    user: 1000:1000
     user: 1883:1883
     ports:
       - 1883:1883
       - 9001:9001
     volumes:
-#      - ./mosquitto/conf:/mosquitto/conf
-#      - ./mosquitto/conf/mosquitto.conf:/mosquitto/conf/mosquitto.conf
-#      - ./mosquitto/data:/mosquitto/data
-#      - ./mosquitto/log:/mosquitto/log
-      - /home/ubuntu/docker/hass/mosquitto/config:/mosquitto/config
-      - /home/ubuntu/docker/hass/mosquitto/data:/mosquitto/data
-      - /home/ubuntu/docker/hass/mosquitto/log:/mosquitto/log
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
 
   zigbee2mqtt:
-#    container_name: zigbee2mqtt
     image: koenkk/zigbee2mqtt
-#    networks:
-#      - default
     environment:
       - PUID=1000
       - PGID=1000
