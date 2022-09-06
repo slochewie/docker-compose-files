@@ -4,6 +4,7 @@
 - https://hub.docker.com/_/eclipse-mosquitto
 - https://github.com/Koenkk/zigbee2mqtt
 
+## Installation
 ```
 mkdir -p $HOME/docker/hass
 ```
@@ -20,7 +21,7 @@ docker-compose pull
 docker-compose up -d
 ```
 
-To update all
+## To update all
 ```
 docker-compose pull
 ```
@@ -28,7 +29,7 @@ docker-compose pull
 docker-compose up -d
 ```
 
-To update Home Asssitant
+## To update Home Asssitant
 ```
 docker-compose pull homeassistant
 ```
@@ -36,7 +37,7 @@ docker-compose pull homeassistant
 docker-compose up -d homeassistant
 ```
 
-To update Mosquitto
+## To update Mosquitto
 ```
 docker-compose pull mosquitto
 ```
@@ -44,7 +45,7 @@ docker-compose pull mosquitto
 docker-compose up -d mosquitto
 ```
 
-To update Zigbee2MQTT
+## To update Zigbee2MQTT
 ```
 docker-compose pull zigbee2mqtt
 ```
@@ -52,24 +53,28 @@ docker-compose pull zigbee2mqtt
 docker-compose up -d zigbee2mqtt
 ```
 
-To restart Home Assistant
+## To restart Home Assistant
 ```
 docker-compose restart homeassistant
 ```
 
-To restart Mosquitto
+## To restart Mosquitto
 ```
 docker-compose restart mosquitto
 ```
 
-To restart Zigbee2MQTT
+## To restart Zigbee2MQTT
 ```
 docker-compose restart zigbee2mqtt
 ```
 
-##Home Assistant and Zigbee2MQTT web admins
+## Home Assistant and Zigbee2MQTT web admins
+
+Home Assistant
+http://server-ip:8989
+
 Zigbee2MQTT
-http://your-pi-ip:8989
+http://server-ip:8989
 
 ## Author
 
