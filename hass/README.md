@@ -20,11 +20,54 @@ docker-compose pull
 docker-compose up -d
 ```
 
-Go to:
+To update all
+```
+docker-compose pull
+```
+```
+docker-compose up -d
+```
 
-Home-Assistant
-http://your-pi-ip:8123
+To update Home Asssitant
+```
+docker-compose pull homeassistant
+```
+```
+docker-compose up -d homeassistant
+```
 
+To update Mosquitto
+```
+docker-compose pull mosquitto
+```
+```
+docker-compose up -d mosquitto
+```
+
+To update Zigbee2MQTT
+```
+docker-compose pull zigbee2mqtt
+```
+```
+docker-compose up -d zigbee2mqtt
+```
+
+To restart Home Assistant
+```
+docker-compose restart homeassistant
+```
+
+To restart Mosquitto
+```
+docker-compose restart mosquitto
+```
+
+To restart Zigbee2MQTT
+```
+docker-compose restart zigbee2mqtt
+```
+
+##Home Assistant and Zigbee2MQTT web admins
 Zigbee2MQTT
 http://your-pi-ip:8989
 
