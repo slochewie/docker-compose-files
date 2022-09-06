@@ -21,6 +21,7 @@ docker-compose up -d
 ```
 
 Go to:
+
 Home-Assistant
 http://your-pi-ip:8123
 
