@@ -1,7 +1,9 @@
 # Home Assistant, Mosquitto, and Zigbee2MQTT
 - https://www.home-assistant.io
 - https://hub.docker.com/r/homeassistant/home-assistant
+- https://mosquitto.org/
 - https://hub.docker.com/_/eclipse-mosquitto
+- https://www.zigbee2mqtt.io/
 - https://github.com/Koenkk/zigbee2mqtt
 
 ## Installation
