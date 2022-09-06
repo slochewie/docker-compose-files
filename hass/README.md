@@ -37,7 +37,7 @@ nano mosquitto.conf
 ```
 sudo mv mosquito.conf ./mosquitto/config/
 ```
-The Mosquitto container runs the mosquitto server under UID 1883 and GID 1883. To avoid read/write errors, chown the mosquitto directory as 1883:1883
+The Mosquitto container runs the mosquitto server under UID 1883 and GID 1883. I've tried changing this in the docker-compose file with no luck. My workarounf to avoid read/write errors is to chown the mosquitto directory with 1883:1883
 ```
 sudo chown -R 1883:1883 ./mosquitto
 ```
