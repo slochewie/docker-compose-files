@@ -20,6 +20,30 @@ docker-compose pull
 ```
 docker-compose up -d
 ```
+Edit configuration.yml to your needs
+```
+nano configuration.yml
+```
+```
+sudo mv configuration.yml ./zigbee2mqtt/data/
+```
+
+Edit mosquito.conf to your needs
+```
+nano mosquitto.conf
+```
+```
+sudo mv mosquito.conf ./mosquitto/config/
+```
+```
+sudo chown -R 1883:1883 mosquitto
+```
+
+Restart Mosquitto and Zigbee2MQTT
+```
+docker-compose restart mosquitto zigbee2mqtt
+```
+
 
 ## To update all
 ```
