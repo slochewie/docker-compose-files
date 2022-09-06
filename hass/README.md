@@ -102,10 +102,6 @@ docker-compose exec mosquitto mosquitto_passwd -c /mosquitto/config/password_fil
 ```
 You'll be prompted for a password twice. Enter it twice.
 
-Drop out of the container shell
-```
-exit
-```
 
 Now edit the mosquitto conf file.
 ```
