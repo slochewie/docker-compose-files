@@ -22,7 +22,7 @@ docker-compose pull
 ```
 docker-compose up -d
 ```
-Edit configuration.yml to your needs
+Edit Zigbee2MQTT's configuration.yml to your needs
 ```
 nano configuration.yml
 ```
@@ -30,7 +30,7 @@ nano configuration.yml
 sudo mv configuration.yml ./zigbee2mqtt/data/
 ```
 
-Edit mosquito.conf to your needs
+Edit Mosquitto's mosquito.conf to your needs. By default the existing file should work as is with no authentication needed. This is fine for initial usage making sure it works, but authentication should be added.
 ```
 nano mosquitto.conf
 ```
@@ -94,6 +94,32 @@ docker-compose restart mosquitto
 ```
 docker-compose restart zigbee2mqtt
 ```
+
+## Adding Mosquitto user Authentication
+change <user> to an user of your liking. This user and password will also be used in Home Assistant when adding MQTT support. I use hass_mqtt as the user but it's totally up to you.
+```
+docker-compose exec mosquitto mosquitto_passwd -c /mosquitto/config/password_file <user>
+```
+You'll be prompted for a password twice. Enter it twice.
+
+Drop out of the container shell
+```
+exit
+```
+
+Now edit the mosquitto conf file.
+```
+nano ,/mosquitto/config/mosquitto.config
+```
+Find the line
+```
+#password_file
+```
+Change it to
+```
+password_file /mosquitto/config/password_file
+```
+
 
 ## Home Assistant and Zigbee2MQTT web admins
 
