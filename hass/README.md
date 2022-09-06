@@ -35,8 +35,9 @@ nano mosquitto.conf
 ```
 sudo mv mosquito.conf ./mosquitto/config/
 ```
+The Mosquitto container runs the mosquitto server under UID 1883 and GID 1883. To avoid read/write errors, chown the mosquitto directory as 1883:1883
 ```
-sudo chown -R 1883:1883 mosquitto
+sudo chown -R 1883:1883 ./mosquitto
 ```
 
 Restart Mosquitto and Zigbee2MQTT
