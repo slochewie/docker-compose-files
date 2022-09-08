@@ -14,7 +14,7 @@ mkdir -p $HOME/docker/hass
 cd $HOME/docker/hass
 ```
 ```
-wget https://github.com/slochewie/docker-compose-files/raw/main/hass/docker-compose.yml
+wget https://raw.githubusercontent.com/slochewie/docker-compose-files/main/hass/docker-compose.yml
 ```
 ```
 docker-compose pull
