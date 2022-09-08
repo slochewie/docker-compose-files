@@ -107,7 +107,7 @@ You'll be prompted for a password twice. Enter it twice.
 
 Now edit the mosquitto conf file.
 ```
-nano ,/mosquitto/config/mosquitto.config
+sudo nano ./mosquitto/config/mosquitto.config
 ```
 Find the line
 ```
