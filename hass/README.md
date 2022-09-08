@@ -96,7 +96,7 @@ docker-compose restart zigbee2mqtt
 ```
 
 ## Adding Mosquitto User Authentication
-Out of the box with the included mosquitto.conf file, user authentication will be disabled and allow anonymous connections. Perform the following steps to setup user authentication and disable anonymous connections to Mosquitto.
+Out of the box, the included mosquitto.conf file, user authentication will be disabled and allow anonymous connections. Perform the following steps to setup user authentication and disable anonymous connections to Mosquitto.
 
 Change <user> to an user of your liking. This user and password will also be used in Home Assistant when adding MQTT support. I use hass_mqtt as the user but it's totally up to you.
 ```
