@@ -1,6 +1,8 @@
 version: "2.1"
 services:
   homeassistant:
+# https://www.home-assistant.io
+# https://hub.docker.com/r/homeassistant/home-assistant
     image: lscr.io/linuxserver/homeassistant:latest
     network_mode: host
     environment:
@@ -16,6 +18,8 @@ services:
     restart: unless-stopped
 
   mosquitto:
+# https://mosquitto.org/
+# https://hub.docker.com/_/eclipse-mosquitto
     image: eclipse-mosquitto
     environment:
 #      - PUID=1000
@@ -31,6 +35,8 @@ services:
       - ./mosquitto/log:/mosquitto/log
 
   zigbee2mqtt:
+# https://www.zigbee2mqtt.io/
+# https://github.com/Koenkk/zigbee2mqtt
     image: koenkk/zigbee2mqtt
     environment:
       - PUID=1000
