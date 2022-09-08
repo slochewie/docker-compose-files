@@ -109,6 +109,14 @@ nano ,/mosquitto/config/mosquitto.config
 ```
 Find the line
 ```
+allow_anonymous true
+```
+Change it to
+```
+allow_anonymous false
+```
+Find the line
+```
 #password_file
 ```
 Change it to
