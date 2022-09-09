@@ -47,7 +47,7 @@ services:
       - ./zigbee2mqtt/data:/app/data
       - /run/udev:/run/udev:ro
     ports:
-      # Frontend port
+      # Frontend port. default is 8080, but conflicts with Unifi Controller
       - 8989:8989
     environment:
       - TZ=America/Los_Angeles
