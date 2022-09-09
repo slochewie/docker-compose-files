@@ -9,4 +9,5 @@ mqtt:
 serial:
   port: /dev/ttyACM0
 frontend:
+# default is 8080. 8080 conflicts with UniFi Controller.
   port: 8989
