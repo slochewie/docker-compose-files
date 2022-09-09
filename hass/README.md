@@ -1,4 +1,4 @@
-# Home Assistant, Mosquitto, and Zigbee2MQTT
+# Home Assistant, Mosquitto, and Zigbee2MQTT in Docker
 - https://www.home-assistant.io
 - https://hub.docker.com/r/homeassistant/home-assistant
 - https://mosquitto.org/
