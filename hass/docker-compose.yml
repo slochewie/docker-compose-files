@@ -33,7 +33,8 @@ services:
       - ./mosquitto/config:/mosquitto/config
       - ./mosquitto/data:/mosquitto/data
       - ./mosquitto/log:/mosquitto/log
-
+    restart: unless-stopped
+    
   zigbee2mqtt:
 # https://www.zigbee2mqtt.io/
 # https://github.com/Koenkk/zigbee2mqtt
