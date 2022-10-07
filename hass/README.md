@@ -132,8 +132,33 @@ Change it to
 password_file /mosquitto/config/password_file
 ```
 
-## Configure Zigbee2MQTT to authenticate to Mosquitto and allow Home Assistant
+## Configure Zigbee2MQTT to authenticate against Mosquitto
 
+```
+sudo nano $HOME/docker/hass/zigbee2mqtt/data/configuration.yaml
+```
+Change
+```
+# Zigbee2MQTT configuration file
+homeassistant: true
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: <LAN ip address of server>
+#  user: <user>
+#  password: <password>
+```
+to
+```
+# Zigbee2MQTT configuration file
+homeassistant: true
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: <LAN ip address of server>
+  user: <mosquitto_user>
+  password: <mosquitto_password>
+```
 
 ## Home Assistant and Zigbee2MQTT web admins
 
