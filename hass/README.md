@@ -132,6 +132,8 @@ Change it to
 password_file /mosquitto/config/password_file
 ```
 
+## Configure Zigbee2MQTT to authenticate to Mosquitto and allow Home Assistant
+
 
 ## Home Assistant and Zigbee2MQTT web admins
 
