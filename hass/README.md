@@ -160,6 +160,10 @@ mqtt:
   password: <mosquitto_password>
 ```
 
+Restart Zigbee2MQTT
+
+
+
 ## Home Assistant and Zigbee2MQTT web admins
 
 Home Assistant
