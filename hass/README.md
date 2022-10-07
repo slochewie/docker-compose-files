@@ -178,6 +178,9 @@ http://server-ip:8989
 
 Zigbee2MQTT
 http://server-ip:8989
+  
+### Addendum
+This README works out of the box with the SONOFF Zigbee 3.0 USB Dongle Plus-E.
 
 ## Author
 
