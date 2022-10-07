@@ -162,7 +162,12 @@ mqtt:
 
 Restart Zigbee2MQTT
 
+### Add MQTT/Zigbee2MQTT to Home Assistant
+Login to Home Assistant
 
+Go to Settings -> Devices & Services -> Add Integration
+Search for MQTT and add it.
+Input the MQTT Server's IP Addreess, user name, and password.
 
 ## Home Assistant and Zigbee2MQTT web admins
 
