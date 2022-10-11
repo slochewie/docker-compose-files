@@ -27,12 +27,12 @@ nano $HOME/docker/shairport-sync/etc/shairport-sync.conf
 ```
 CTRL-X to save.
 
-Change
+Edit docker-compose and make the following changes:
 ```
 #     volumes:
 #       - ./config/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
 ```
-To
+Change to:
 ```
      volumes:
        - ./config/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
@@ -41,6 +41,9 @@ Recreate and restart the container.
 ```
 docker-compose up -d
 ```
+
+
+
 ## Author
 
 Aaron Wilson <https://niteowl.dev>
