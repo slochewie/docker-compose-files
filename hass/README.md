@@ -174,7 +174,7 @@ Input the MQTT Server's IP Addreess, user name, and password.
 ## Home Assistant and Zigbee2MQTT web admins
 
 Home Assistant
-http://server-ip:8989
+http://server-ip:8123
 
 Zigbee2MQTT
 http://server-ip:8989
