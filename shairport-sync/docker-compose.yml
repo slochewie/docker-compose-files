@@ -10,8 +10,8 @@ services:
      - TZ='TZ=America/Los_Angeles'
     devices:
       - "/dev/snd"
-     volumes:
-       - ./etc/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
+#     volumes:
+#       - ./etc/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
     logging:
       options:
         max-size: "200k"
