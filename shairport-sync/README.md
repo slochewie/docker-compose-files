@@ -37,8 +37,9 @@ docker-compose.yml
 ```
 nano $HOME/docker/shairport-sync/etc/shairport-sync.conf
 ```
+CTRL-X tg save. Restart shairport-sync
 ```
-docker container restart shairport-sync
+docker-compose restart
 ```
 
 
