@@ -161,6 +161,11 @@ mqtt:
 ```
 
 Restart Zigbee2MQTT
+```
+docker-compose restart zigbee2mqtt
+```
+
+
 
 ### Add MQTT/Zigbee2MQTT to Home Assistant
 Login to Home Assistant
