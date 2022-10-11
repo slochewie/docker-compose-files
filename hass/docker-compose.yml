@@ -16,6 +16,9 @@ services:
 #    devices:
 #      - /path/to/device:/path/to/device #optional
     restart: unless-stopped
+    depends_on:
+      - mosquitto
+      - zigbee2mqtt
 
   mosquitto:
 # https://mosquitto.org/
@@ -48,10 +51,13 @@ services:
       - ./zigbee2mqtt/data:/app/data
       - /run/udev:/run/udev:ro
     ports:
-      # Frontend port. default is 8080, but conflicts with Unifi Controller
+      # Frontend port. default is 8080, but that conflicts with Unifi Controller.
+      #-8080:8080
       - 8989:8989
     environment:
       - TZ=America/Los_Angeles
     devices:
-      # Make sure this matched your adapter location
+      # Make sure this matched your adapter location. The following should be what a Sonoff Zigbee 3 USB adapter uses.
       - /dev/ttyUSB0:/dev/ttyACM0
+    depends_on:
+      - mosquitto
