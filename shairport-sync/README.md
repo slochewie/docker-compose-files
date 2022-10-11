@@ -1,5 +1,6 @@
 # Shairport Sync
 https://hub.docker.com/r/mikebrady/shairport-sync
+Shairport Sync is an Apple AirPlay audio player.
 
 ```
 mkdir -p $HOME/docker/shairport-sync/etc
