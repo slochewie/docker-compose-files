@@ -155,7 +155,7 @@ homeassistant: true
 permit_join: true
 mqtt:
   base_topic: zigbee2mqtt
-  server: <LAN ip address of server>
+  server: <LAN ip address of Mosquitto server>
   user: <mosquitto_user>
   password: <mosquitto_password>
 ```
