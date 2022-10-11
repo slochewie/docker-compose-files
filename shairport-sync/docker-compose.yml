@@ -1,15 +1,18 @@
 version: '3.3'
+
 services:
-    shairport-sync:
-        restart: unless-stopped
-        network_mode: host
-        environment: 
-#            - NAME='AirPlay Name'
-            - TZ='TZ=America/Los_Angeles'
-        devices:
-            - '/dev/snd:/dev/snd'
-#        volumes:
-#            - '/usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf'
-#           - '$PWD/etc/shairport-sync.conf:/etc/shairport-sync.conf'
-        container_name: shairport-sync
-        image: mikebrady/shairport-sync
+  shairport-sync:
+    container_name: shairport-sync
+    image: mikebrady/shairport-sync:latest
+    network_mode: host
+    restart: unless-stopped
+    environment: 
+     - TZ='TZ=America/Los_Angeles'
+    devices:
+      - "/dev/snd"
+     volumes:
+       - ./config/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
+    logging:
+      options:
+        max-size: "200k"
+        max-file: "10"
