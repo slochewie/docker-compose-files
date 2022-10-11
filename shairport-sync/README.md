@@ -25,13 +25,22 @@ Edit $HOME/docker/shairport-sync/shairport-sync.conf to your liking.
 ```
 nano $HOME/docker/shairport-sync/etc/shairport-sync.conf
 ```
-CTRL-X to save. Restart shairport-sync
+CTRL-X to save.
+
+Change
 ```
-docker-compose restart
+#     volumes:
+#       - ./config/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
 ```
-
-
-
+To
+```
+     volumes:
+       - ./config/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
+```
+Recreate and restart the container.
+```
+docker-compose up -d
+```
 ## Author
 
 Aaron Wilson <https://niteowl.dev>
