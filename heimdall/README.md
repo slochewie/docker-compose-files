@@ -15,6 +15,7 @@ cd &HOME/docker/heimdall
 ```
 wget https://raw.githubusercontent.com/slochewie/docker-compose-files/main/heimdall/docker-compose.yml
 ```
+```
 docker-compose pull
 ```
 ```
