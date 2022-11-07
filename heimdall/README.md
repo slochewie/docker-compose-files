@@ -10,8 +10,7 @@ mkdir -p $HOME/docker/heimdall
 cd &HOME/docker/heimdall
 ```
 ```
-wget https://github.com/slochewie/docker-compose-files/raw/main/home-assistant/docker-compose.yml
-```
+wget https://raw.githubusercontent.com/slochewie/docker-compose-files/main/heimdall/docker-compose.yml
 ```
 docker-compose pull
 ```
