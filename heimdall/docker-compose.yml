@@ -1,0 +1,17 @@
+version: "2.1"
+services:
+  heimdall:
+    image: ghcr.io/linuxserver/heimdall
+    container_name: heimdall
+    security_opt:
+      - seccomp=unconfined
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Los_Angeles
+    volumes:
+      - $PWD/config:/config
+    ports:
+      - 80:80
+#      - 443:443
+    restart: unless-stopped
